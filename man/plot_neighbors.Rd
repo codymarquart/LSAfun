@@ -44,7 +44,7 @@ For creating pretty plots showing the similarity structure within this neighborh
 \code{plot_neighbors} also gives the coordinate vectors of the words in the plot as a data frame}
 
 \author{
-  Fritz Günther
+  Fritz G?nther
 }
 \seealso{
   \code{\link[lsa]{cosine}},
@@ -64,13 +64,8 @@ Mardia, K.V., Kent, J.T., & Bibby, J.M. (1979). \emph{Multivariate Analysis}, Lo
 \examples{data(wonderland)
 
 ## Standard Plot
-plot_neighbors("cheshire",n=20,tvectors=wonderland)  
+plot_neighbors("cheshire",n=20,tvectors=wonderland, dims=2)  
 
 ## Pretty Plot
-plot_neighbors("cheshire",n=20,tvectors=wonderland,
-                connect.lines="all",col="rainbow")  
-
-
-
-plot_neighbors(compose("mad","hatter",tvectors=wonderland),
-                n=20, connect.lines=2,tvectors=wonderland)}
+plot_neighbors("cheshire",n=20,tvectors=wonderland,connect.lines="all",col="rainbow")  
+plot_neighbors(compose("mad","hatter",tvectors=wonderland), n=20, connect.lines=2,tvectors=wonderland)}
